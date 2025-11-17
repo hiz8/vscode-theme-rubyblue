@@ -7,34 +7,33 @@ This document provides comprehensive guidance for AI assistants working on the R
 **Project Name:** RubyBlue Theme
 **Type:** Visual Studio Code Color Theme Extension
 **Description:** A dark, high contrast theme for Visual Studio Code
-**Version:** 2.1.0
+**Version:** 3.0.0
 **License:** MIT
 **Publisher:** hirofumii
 **Repository:** https://github.com/hirofumii/vscode-theme-rubyblue
+**Minimum VS Code Version:** ^1.80.0
 
 ### Purpose
-This is a VS Code extension that provides a single color theme called "Ruby Blue". It's based on the CodeMirror RubyBlue theme and was adapted to match the Brackets editor version of the theme.
+This is a VS Code extension that provides a single color theme called "Ruby Blue". It's based on the CodeMirror RubyBlue theme and was adapted to match the Brackets editor version of the theme. Version 3.0.0 brings the theme up to modern VS Code standards with comprehensive UI color tokens, semantic highlighting support, and adherence to current best practices.
 
 ## Repository Structure
 
 ```
 vscode-theme-rubyblue/
-├── .vscode/                      # VS Code workspace configuration
-│   ├── extensions.json           # Recommended extensions
-│   ├── launch.json               # Launch configuration for testing
-│   └── settings.json             # Workspace editor settings
-├── themes/                       # Theme definition files
-│   ├── RubyBlue.tmTheme.json    # Main theme file (JSON format)
-│   ├── RubyBlue.tmTheme.old     # Legacy theme file
-│   ├── RubyBlueTheme.less       # LESS source file (legacy)
-│   └── --.tmcolor               # Color definitions
-├── .editorconfig                 # EditorConfig settings
-├── .gitignore                    # Git ignore rules
-├── CONTRIBUTING.md               # Contribution guidelines
-├── LICENSE                       # MIT License
-├── README.md                     # User-facing documentation
-├── icon.png                      # Extension icon
-└── package.json                  # Extension manifest
+├── .vscode/                         # VS Code workspace configuration
+│   ├── extensions.json              # Recommended extensions
+│   ├── launch.json                  # Launch configuration for testing
+│   └── settings.json                # Workspace editor settings
+├── themes/                          # Theme definition files
+│   └── RubyBlue-color-theme.json   # Main theme file (modern JSON format)
+├── .editorconfig                    # EditorConfig settings
+├── .gitignore                       # Git ignore rules
+├── CLAUDE.md                        # AI Assistant guidance (this file)
+├── CONTRIBUTING.md                  # Contribution guidelines
+├── LICENSE                          # MIT License
+├── README.md                        # User-facing documentation
+├── icon.png                         # Extension icon
+└── package.json                     # Extension manifest
 ```
 
 ## Key Files and Their Purpose
@@ -42,8 +41,9 @@ vscode-theme-rubyblue/
 ### package.json
 The extension manifest file that defines:
 - Extension metadata (name, version, publisher, description)
-- VS Code engine compatibility (`^0.10.1`)
+- VS Code engine compatibility (`^1.80.0`)
 - Theme contribution point
+- Keywords for discoverability
 - Links to repository, homepage, and issue tracker
 
 **Important:** The theme is registered in the `contributes.themes` section:
@@ -52,18 +52,34 @@ The extension manifest file that defines:
   "themes": [{
     "label": "Ruby Blue",
     "uiTheme": "vs-dark",
-    "path": "./themes/RubyBlue.tmTheme.json"
+    "path": "./themes/RubyBlue-color-theme.json"
   }]
 }
 ```
 
-### themes/RubyBlue.tmTheme.json
-The main theme definition file (403 lines). Structure:
+### themes/RubyBlue-color-theme.json
+The main theme definition file. Modern structure includes:
+- `$schema`: VS Code color theme schema reference
+- `name`: "Ruby Blue"
 - `type`: "dark" - Indicates this is a dark theme
-- `colors`: Object with 7 editor UI color definitions
+- `semanticHighlighting`: true - Enables semantic token support
+- `colors`: Object with 200+ comprehensive UI color definitions
 - `tokenColors`: Array with 52 token color scopes for syntax highlighting
+- `semanticTokenColors`: Object defining colors for semantic tokens
 
-**Editor Colors Defined:**
+**Key Color Categories:**
+- **Editor Colors**: Background, foreground, selection, line highlight, cursor, whitespace, indent guides, line numbers, gutter
+- **UI Components**: Activity Bar, Side Bar, Status Bar, Title Bar, Menu Bar, Tabs
+- **Widgets**: Input fields, dropdowns, buttons, checkboxes, badges, notifications
+- **Lists and Trees**: Selection states, hover states, focus states
+- **Terminal**: Full ANSI color support (16 colors)
+- **Git**: Decorations for modified, added, deleted, conflicting files
+- **Diff Editor**: Inserted and removed text highlighting
+- **Peek View**: Code preview window styling
+- **Symbol Icons**: Colors for different symbol types in IntelliSense
+- **Errors and Warnings**: Problem indicator colors
+
+**Core Color Palette:**
 - `editor.background`: Main editor background (#112435)
 - `editor.foreground`: Main text color (#f8f8f2)
 - `editor.selectionBackground`: Selection highlight (#3e7087)
@@ -323,7 +339,7 @@ Before finalizing any theme changes:
 
 5. **Scope Names:** When adding token colors, use proper TextMate scope names. Reference the TextMate manual or VS Code's scope inspector (Developer: Inspect Editor Tokens and Scopes).
 
-6. **Backwards Compatibility:** VS Code engine version is `^0.10.1` (very old). Check if adding new theme features requires updating this.
+6. **Modern Standards:** VS Code engine version is `^1.80.0`. The theme utilizes modern features like semantic highlighting and comprehensive color tokens.
 
 7. **Color Consistency:** Maintain the overall color scheme aesthetic. This is a blue-themed dark theme with orange/cyan accents.
 
@@ -392,15 +408,20 @@ This section is primarily for the repository maintainer, but AI assistants shoul
 3. Extension name: "rubyblue-theme"
 4. Display name: "RubyBlue Theme"
 
-## Recent Changes (v2.1.0)
+## Recent Changes (v3.0.0)
 
-- Fixed indent guide color (was purple, now gray #999999)
-- Updated extension icon
-- Previous version (2.0.0) converted theme to JSON format and added Markdown support
+- **Major refactoring to modern VS Code theme standards**
+- Updated minimum VS Code version to ^1.80.0
+- Renamed theme file to RubyBlue-color-theme.json (follows modern naming convention)
+- Added 200+ comprehensive UI color tokens
+- Added semantic highlighting support
+- Enhanced terminal, git decorations, and diff editor support
+- Removed legacy theme files
+- Updated workspace configuration to modern standards
 
 ---
 
 **Last Updated:** 2025-11-17
-**Document Version:** 1.0.0
+**Document Version:** 2.0.0
 
 This document should be updated whenever significant changes are made to the project structure, workflow, or conventions.

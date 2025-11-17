@@ -1,8 +1,8 @@
 {
   "name": "rubyblue-theme",
   "displayName": "RubyBlue Theme",
-  "description": "Dark, high contrast theme.",
-  "version": "2.1.0",
+  "description": "Dark, high contrast theme inspired by CodeMirror's RubyBlue.",
+  "version": "3.0.0",
   "publisher": "hirofumii",
   "icon": "icon.png",
   "galleryBanner": {
@@ -18,16 +18,27 @@
     "url": "https://github.com/hirofumii/vscode-theme-rubyblue/issues"
   },
   "engines": {
-    "vscode": "^0.10.1"
+    "vscode": "^1.80.0"
   },
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "dark theme",
+    "high contrast",
+    "rubyblue",
+    "codemirror",
+    "blue theme"
+  ],
   "contributes": {
-    "themes": [{
-      "label": "Ruby Blue",
-      "uiTheme": "vs-dark",
-      "path": "./themes/RubyBlue.tmTheme.json"
-    }]
+    "themes": [
+      {
+        "label": "Ruby Blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/RubyBlue-color-theme.json"
+      }
+    ]
   }
 }
