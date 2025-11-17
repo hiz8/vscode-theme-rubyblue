@@ -58,7 +58,7 @@ The extension manifest file that defines:
 ```
 
 ### themes/RubyBlue.tmTheme.json
-The main theme definition file (402 lines). Structure:
+The main theme definition file (403 lines). Structure:
 - `type`: "dark" - Indicates this is a dark theme
 - `colors`: Object with 7 editor UI color definitions
 - `tokenColors`: Array with 52 token color scopes for syntax highlighting
