@@ -115,7 +115,7 @@ Debug configuration for testing the extension:
 ### Theme Development
 When modifying `themes/RubyBlue.tmTheme.json`:
 - Maintain alphabetical or logical grouping of color definitions
-- Use hex color codes with 6 or 8 characters (RRGGBB or RRGGBBAA)
+- Use hex color codes with 3, 6, or 8 characters (#RGB, #RRGGBB, or #RRGGBBAA)
 - Test all changes in VS Code by launching the extension
 - Document color purposes in commit messages
 - Consider high contrast requirements for accessibility
