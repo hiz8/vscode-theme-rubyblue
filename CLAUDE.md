@@ -292,7 +292,7 @@ Most languages work automatically through TextMate scopes. If specific styling i
 Before finalizing any theme changes:
 
 - [ ] JSON syntax is valid (no trailing commas, proper quotes)
-- [ ] All hex colors are valid (6 or 8 characters)
+- [ ] All hex colors are valid (3, 6, or 8 characters)
 - [ ] Theme loads without errors in Extension Development Host
 - [ ] Test with HTML files
 - [ ] Test with CSS files
