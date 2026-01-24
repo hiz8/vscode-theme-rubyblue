@@ -363,7 +363,7 @@
       "name": "Number",
       "scope": "constant.numeric",
       "settings": {
-        "foreground": "#66d9ef"
+        "foreground": "#82C6E0"
       }
     },
     {
@@ -450,7 +450,7 @@
       "scope": "entity.name.tag",
       "settings": {
         "fontStyle": "",
-        "foreground": "#A6E22E"
+        "foreground": "#7BD827"
       }
     },
     {
@@ -466,7 +466,7 @@
       "scope": "meta.selector.css entity.name.tag",
       "settings": {
         "fontStyle": "",
-        "foreground": "#A6E22E"
+        "foreground": "#7BD827"
       }
     },
     {
@@ -489,7 +489,7 @@
       "scope": "support.function",
       "settings": {
         "fontStyle": "",
-        "foreground": "#F4C20B"
+        "foreground": "#ff9d00"
       }
     },
     {
@@ -547,14 +547,14 @@
       "scope": "invalid",
       "settings": {
         "fontStyle": "",
-        "foreground": "#F8F8F0"
+        "foreground": "#f44747"
       }
     },
     {
       "name": "Invalid deprecated",
       "scope": "invalid.deprecated",
       "settings": {
-        "foreground": "#F8F8F0"
+        "foreground": "#f44747"
       }
     },
     {
@@ -669,7 +669,7 @@
       "name": "MetaTag",
       "scope": "meta.tag",
       "settings": {
-        "foreground": "#F8F8F0"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -735,7 +735,7 @@
     "method": "#A6E22E",
     "class": "#A6E22E",
     "class.defaultLibrary": "#82C6E0",
-    "interface": "#F8F8F0",
+    "interface": "#FFFFFF",
     "struct": "#A6E22E",
     "type": "#82C6E0",
     "typeParameter": "#FD971F",
@@ -743,13 +743,13 @@
     "enumMember": "#66d9ef",
     "decorator": "#F4C20B",
     "property": "#7BD827",
-    "property.declaration": "#F8F8F0",
+    "property.declaration": "#FFFFFF",
     "property.readonly": "#7BD827",
-    "property.defaultLibrary": "#F8F8F0",
+    "property.defaultLibrary": "#FFFFFF",
     "namespace": "#82C6E0",
     "keyword": "#82C6E0",
     "string": "#F08047",
-    "number": "#66d9ef",
+    "number": "#82C6E0",
     "regexp": "#F08047",
     "operator": "#82C6E0",
     "*.deprecated": { "strikethrough": true }
