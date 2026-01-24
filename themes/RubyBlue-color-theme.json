@@ -141,8 +141,8 @@
     "editorLink.activeForeground": "#66d9ef",
     "editor.rangeHighlightBackground": "#3e708750",
     "editorWhitespace.foreground": "#555555",
-    "editorIndentGuide.background": "#555555",
-    "editorIndentGuide.activeBackground": "#999999",
+    "editorIndentGuide.background1": "#555555",
+    "editorIndentGuide.activeBackground1": "#999999",
     "editorRuler.foreground": "#555555",
     "editorCodeLens.foreground": "#999999",
     "editorBracketMatch.background": "#3e708750",
@@ -342,8 +342,7 @@
   "tokenColors": [
     {
       "settings": {
-        "foreground": "#f8f8f2ff",
-        "background": "#112435ff"
+        "foreground": "#f8f8f2ff"
       }
     },
     {
@@ -547,7 +546,6 @@
       "name": "Invalid",
       "scope": "invalid",
       "settings": {
-        "background": "#F92672",
         "fontStyle": "",
         "foreground": "#F8F8F0"
       }
@@ -556,7 +554,6 @@
       "name": "Invalid deprecated",
       "scope": "invalid.deprecated",
       "settings": {
-        "background": "#AE81FF",
         "foreground": "#F8F8F0"
       }
     },
