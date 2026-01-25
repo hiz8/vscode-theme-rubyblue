@@ -1,39 +1,26 @@
 # Ruby Blue Theme
 
-Dark, high contrast theme for Visual Studio Code.
+Dark, high contrast theme designed for readability.
 
+![Screenshot](https://raw.githubusercontent.com/hiz8/vscode-theme-rubyblue/master/images/preview.png)
 
 ## Install
 
-In VSCode press F1, search `ext install` followed by extension name, in this case: `ext install RubyBlue Theme` without the `>`. Alternatively, if you prefer: `>ext install`, hit enter, search `RubyBlue Theme`.
+Install from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items/hirofumii.rubyblue-theme).
 
-## Screenshots
+After installation, press `Ctrl+K Ctrl+T` (or `Cmd+K Cmd+T` on macOS) and select "Ruby Blue".
 
-### HTML
-![html screenshot](https://raw.githubusercontent.com/hirofumii/vscode-theme-rubyblue/images/html_01.png)
+## Customization
 
-### CSS
-![css screenshot](https://raw.githubusercontent.com/hirofumii/vscode-theme-rubyblue/images/css_01.png)
+You can customize the colors to your liking, overriding the ones provided by this theme. More info [here](https://code.visualstudio.com/api/references/theme-color).
 
-### JavaScript
-![javascript screenshot](https://raw.githubusercontent.com/hirofumii/vscode-theme-rubyblue/images/js_01.png)
+## Credits
 
+This theme is based on:
 
-## Release Notes
+- [Ruby Blue](https://github.com/jlong/rubyblue) by John Long - The original RubyBlue theme
+- [Ruby Blue Brackets Theme](https://github.com/Brackets-Themes/RubyBlue) - The Brackets editor adaptation
 
-### Version 2.1.0
-- Update theme to fix indent guide being purple.
-- Update icon.
+## License
 
-### Version 2.0.0
-- Updated to look more like the brackets version of the theme.
-- Changed theme to JSON format
-- Added MarkDown Formatting
-
-### Version 1.0.0
-
-- Initial release
-
-
-![flogs](https://raw.githubusercontent.com/hirofumii/vscode-theme-rubyblue/images/flogs.png)
-**Happy hacking!**
+[MIT License](./LICENSE)

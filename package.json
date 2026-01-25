@@ -1,33 +1,43 @@
 {
   "name": "rubyblue-theme",
   "displayName": "RubyBlue Theme",
-  "description": "Dark, high contrast theme.",
-  "version": "2.1.0",
+  "description": "Dark, high contrast theme designed for readability.",
+  "version": "3.0.0",
   "publisher": "hirofumii",
   "icon": "icon.png",
   "galleryBanner": {
     "color": "#112435",
     "theme": "dark"
   },
-  "homepage": "https://github.com/hirofumii/vscode-theme-rubyblue",
+  "homepage": "https://github.com/hiz8/vscode-theme-rubyblue",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hirofumii/vscode-theme-rubyblue.git"
+    "url": "https://github.com/hiz8/vscode-theme-rubyblue.git"
   },
   "bugs": {
-    "url": "https://github.com/hirofumii/vscode-theme-rubyblue/issues"
+    "url": "https://github.com/hiz8/vscode-theme-rubyblue/issues"
   },
   "engines": {
-    "vscode": "^0.10.1"
+    "vscode": "^1.80.0"
   },
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "dark theme",
+    "high contrast",
+    "rubyblue",
+    "blue theme"
+  ],
   "contributes": {
-    "themes": [{
-      "label": "Ruby Blue",
-      "uiTheme": "vs-dark",
-      "path": "./themes/RubyBlue.tmTheme.json"
-    }]
+    "themes": [
+      {
+        "label": "Ruby Blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/RubyBlue-color-theme.json"
+      }
+    ]
   }
 }
