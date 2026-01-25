@@ -1,7 +1,7 @@
 {
   "name": "rubyblue-theme",
   "displayName": "RubyBlue Theme",
-  "description": "Dark, high contrast theme inspired by CodeMirror's RubyBlue.",
+  "description": "Dark, high contrast theme.",
   "version": "3.0.0",
   "publisher": "hirofumii",
   "icon": "icon.png",
@@ -29,7 +29,6 @@
     "dark theme",
     "high contrast",
     "rubyblue",
-    "codemirror",
     "blue theme"
   ],
   "contributes": {

@@ -14,7 +14,7 @@ This document provides comprehensive guidance for AI assistants working on the R
 **Minimum VS Code Version:** ^1.80.0
 
 ### Purpose
-This is a VS Code extension that provides a single color theme called "Ruby Blue". It's based on the CodeMirror RubyBlue theme and was adapted to match the Brackets editor version of the theme. Version 3.0.0 brings the theme up to modern VS Code standards with comprehensive UI color tokens, semantic highlighting support, and adherence to current best practices.
+This is a VS Code extension that provides a single color theme called "Ruby Blue". It's based on the Ruby Blue Brackets Theme, which itself is an adaptation of the original RubyBlue theme by John Long. Version 3.0.0 brings the theme up to modern VS Code standards with comprehensive UI color tokens, semantic highlighting support, and adherence to current best practices.
 
 ## Repository Structure
 
@@ -394,9 +394,8 @@ cat package.json | jq -r .version
 
 1. **High Contrast:** Maintain clear visual distinction between elements
 2. **Dark Theme:** Preserve the dark background aesthetic
-3. **RubyBlue Heritage:** Stay true to the original CodeMirror RubyBlue theme
-4. **Brackets Compatibility:** Match the Brackets editor version where applicable
-5. **Simplicity:** Keep the theme straightforward without excessive customization options
+3. **RubyBlue Heritage:** Stay true to the Ruby Blue Brackets Theme
+4. **Simplicity:** Keep the theme straightforward without excessive customization options
 6. **Accessibility:** Ensure colors are readable and distinguishable
 
 ## Extension Publication
