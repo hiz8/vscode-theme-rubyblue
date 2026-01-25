@@ -2,6 +2,8 @@
 
 Dark, high contrast theme designed for readability.
 
+![Screenshot](https://raw.githubusercontent.com/hiz8/vscode-theme-rubyblue/refs/heads/claude/refactor-vscode-theme-01SHMwW13brRr66TU8Ub23SN/images/preview.png)
+
 ## Install
 
 Install from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items/hirofumii.rubyblue-theme).
