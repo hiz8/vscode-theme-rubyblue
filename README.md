@@ -4,18 +4,9 @@ Dark, high contrast theme for Visual Studio Code.
 
 ## Install
 
-1. Open VS Code
-2. Press `Ctrl+Shift+X` (or `Cmd+Shift+X` on macOS) to open the Extensions view
-3. Search for `RubyBlue Theme`
-4. Click Install
-5. Press `Ctrl+K Ctrl+T` (or `Cmd+K Cmd+T` on macOS) to open the theme picker
-6. Select "Ruby Blue" from the list
+Install from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items/hirofumii.rubyblue-theme).
 
-Alternatively, you can install it from the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P`):
-
-- Type `Extensions: Install Extensions`
-- Search for `RubyBlue Theme`
-- Click Install
+After installation, press `Ctrl+K Ctrl+T` (or `Cmd+K Cmd+T` on macOS) and select "Ruby Blue".
 
 ## Screenshots
 
@@ -61,6 +52,13 @@ Alternatively, you can install it from the command palette (`Ctrl+Shift+P` or `C
 ### Version 1.0.0
 
 - Initial release
+
+## Credits
+
+This theme is based on:
+
+- [Ruby Blue](https://github.com/jlong/rubyblue) by John Long - The original RubyBlue theme
+- [Ruby Blue Brackets Theme](https://github.com/Brackets-Themes/RubyBlue) - The Brackets editor adaptation
 
 ![flogs](https://raw.githubusercontent.com/hirofumii/vscode-theme-rubyblue/images/flogs.png)
 **Happy hacking!**
