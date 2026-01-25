@@ -9,13 +9,13 @@
     "color": "#112435",
     "theme": "dark"
   },
-  "homepage": "https://github.com/hirofumii/vscode-theme-rubyblue",
+  "homepage": "https://github.com/hiz8/vscode-theme-rubyblue",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hirofumii/vscode-theme-rubyblue.git"
+    "url": "https://github.com/hiz8/vscode-theme-rubyblue.git"
   },
   "bugs": {
-    "url": "https://github.com/hirofumii/vscode-theme-rubyblue/issues"
+    "url": "https://github.com/hiz8/vscode-theme-rubyblue/issues"
   },
   "engines": {
     "vscode": "^1.80.0"

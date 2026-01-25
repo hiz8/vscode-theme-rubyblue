@@ -10,10 +10,11 @@ This document provides comprehensive guidance for AI assistants working on the R
 **Version:** 3.0.0
 **License:** MIT
 **Publisher:** hirofumii
-**Repository:** https://github.com/hirofumii/vscode-theme-rubyblue
+**Repository:** https://github.com/hiz8/vscode-theme-rubyblue
 **Minimum VS Code Version:** ^1.80.0
 
 ### Purpose
+
 This is a VS Code extension that provides a single color theme called "Ruby Blue". It's based on the Ruby Blue Brackets Theme, which itself is an adaptation of the original RubyBlue theme by John Long. Version 3.0.0 brings the theme up to modern VS Code standards with comprehensive UI color tokens, semantic highlighting support, and adherence to current best practices.
 
 ## Repository Structure
@@ -39,7 +40,9 @@ vscode-theme-rubyblue/
 ## Key Files and Their Purpose
 
 ### package.json
+
 The extension manifest file that defines:
+
 - Extension metadata (name, version, publisher, description)
 - VS Code engine compatibility (`^1.80.0`)
 - Theme contribution point
@@ -47,6 +50,7 @@ The extension manifest file that defines:
 - Links to repository, homepage, and issue tracker
 
 **Important:** The theme is registered in the `contributes.themes` section:
+
 ```json
 "contributes": {
   "themes": [{
@@ -58,7 +62,9 @@ The extension manifest file that defines:
 ```
 
 ### themes/RubyBlue-color-theme.json
+
 The main theme definition file. Modern structure includes:
+
 - `$schema`: VS Code color theme schema reference
 - `name`: "Ruby Blue"
 - `type`: "dark" - Indicates this is a dark theme
@@ -68,6 +74,7 @@ The main theme definition file. Modern structure includes:
 - `semanticTokenColors`: Object defining colors for semantic tokens
 
 **Key Color Categories:**
+
 - **Editor Colors**: Background, foreground, selection, line highlight, cursor, whitespace, indent guides, line numbers, gutter
 - **UI Components**: Activity Bar, Side Bar, Status Bar, Title Bar, Menu Bar, Tabs
 - **Widgets**: Input fields, dropdowns, buttons, checkboxes, badges, notifications
@@ -80,6 +87,7 @@ The main theme definition file. Modern structure includes:
 - **Errors and Warnings**: Problem indicator colors
 
 **Core Color Palette:**
+
 - `editor.background`: Main editor background (#112435)
 - `editor.foreground`: Main text color (#f8f8f2)
 - `editor.selectionBackground`: Selection highlight (#3e7087)
@@ -91,7 +99,9 @@ The main theme definition file. Modern structure includes:
 **Token Colors:** 52 different scopes covering comments, strings, keywords, functions, classes, variables, etc.
 
 ### .editorconfig
+
 Defines coding style rules:
+
 - Indent style: spaces (not tabs)
 - Indent size: 2 spaces
 - Line endings: CRLF
@@ -100,7 +110,9 @@ Defines coding style rules:
 - Insert final newline: yes
 
 ### .vscode/settings.json
+
 Workspace-specific VS Code settings that enforce:
+
 - Tab size: 2
 - Insert spaces: true
 - Render whitespace: all
@@ -109,7 +121,9 @@ Workspace-specific VS Code settings that enforce:
 - Trim trailing whitespace: true
 
 ### .vscode/launch.json
+
 Debug configuration for testing the extension:
+
 - Name: "Launch Extension"
 - Type: extensionHost
 - Opens a new VS Code window with the extension loaded
@@ -117,6 +131,7 @@ Debug configuration for testing the extension:
 ## Code Conventions and Style Guide
 
 ### General Rules
+
 1. **Indentation:** Use 2 spaces, never tabs
 2. **Line Endings:** CRLF (Windows-style)
 3. **Charset:** UTF-8
@@ -124,12 +139,15 @@ Debug configuration for testing the extension:
 5. **Final Newline:** Always include a newline at the end of files
 
 ### JSON Formatting
+
 - Use 2-space indentation
 - Follow standard JSON formatting rules
 - Maintain consistency with existing structure
 
 ### Theme Development
+
 When modifying `themes/RubyBlue.tmTheme.json`:
+
 - Maintain alphabetical or logical grouping of color definitions
 - Use hex color codes with 3, 6, or 8 characters (#RGB, #RRGGBB, or #RRGGBBAA)
 - Test all changes in VS Code by launching the extension
@@ -137,7 +155,9 @@ When modifying `themes/RubyBlue.tmTheme.json`:
 - Consider high contrast requirements for accessibility
 
 ### Color Palette
+
 Key colors used in the theme:
+
 - Background: #112435 (dark blue)
 - Foreground: #f8f8f2 (off-white)
 - Selection: #3e7087 (medium blue)
@@ -151,8 +171,9 @@ Key colors used in the theme:
 ### Setting Up Development Environment
 
 1. **Clone the repository:**
+
    ```bash
-   git clone https://github.com/hirofumii/vscode-theme-rubyblue.git
+   git clone https://github.com/hiz8/vscode-theme-rubyblue.git
    cd vscode-theme-rubyblue
    ```
 
@@ -193,6 +214,7 @@ Key colors used in the theme:
 ### Making Theme Changes
 
 1. **Edit the theme file:**
+
    ```bash
    # Open the main theme file
    code themes/RubyBlue.tmTheme.json
@@ -216,12 +238,15 @@ Key colors used in the theme:
 ## Git Workflow
 
 ### Branch Strategy
+
 - Main branch: `main` (or check repository settings)
 - Feature branches: Create descriptive branch names
 - Always develop on feature branches for Claude Code sessions
 
 ### Commit Guidelines
+
 1. **Write clear commit messages:**
+
    ```
    Update theme to fix indent guide being purple
 
@@ -239,7 +264,9 @@ Key colors used in the theme:
    - Check for syntax errors in JSON files
 
 ### Version Updates
+
 When releasing a new version:
+
 1. Update `version` field in `package.json`
 2. Add release notes to README.md
 3. Commit with message like "Bump version to X.Y.Z"
@@ -250,12 +277,14 @@ When releasing a new version:
 ### Task: Add or Modify a Color
 
 1. **For UI colors:**
+
    ```json
    // In themes/RubyBlue.tmTheme.json, under "colors"
    "editor.newFeature": "#hexcolor"
    ```
 
 2. **For token colors:**
+
    ```json
    // In themes/RubyBlue.tmTheme.json, under "tokenColors"
    {
@@ -281,6 +310,7 @@ When releasing a new version:
 ### Task: Add Support for New Language
 
 Most languages work automatically through TextMate scopes. If specific styling is needed:
+
 1. Research the language's TextMate grammar scopes
 2. Add specific scope rules to `tokenColors` array
 3. Test with sample files in that language
@@ -396,7 +426,7 @@ cat package.json | jq -r .version
 2. **Dark Theme:** Preserve the dark background aesthetic
 3. **RubyBlue Heritage:** Stay true to the Ruby Blue Brackets Theme
 4. **Simplicity:** Keep the theme straightforward without excessive customization options
-6. **Accessibility:** Ensure colors are readable and distinguishable
+5. **Accessibility:** Ensure colors are readable and distinguishable
 
 ## Extension Publication
 
