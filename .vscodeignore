@@ -1,0 +1,10 @@
+# Development files
+.gitignore
+.editorconfig
+.vscode/
+.claude/
+CLAUDE.md
+CONTRIBUTING.md
+
+# Source files not needed in package
+**/*.less
