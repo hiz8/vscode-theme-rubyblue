@@ -1,5 +1,7 @@
 # Ruby Blue Theme
 
+[![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue?style=for-the-badge&colorA=112435&colorB=82C6E0)](https://vscode.dev/theme/hirofumii.rubyblue-theme)
+
 Dark, high contrast theme designed for readability.
 
 ![Screenshot](https://raw.githubusercontent.com/hiz8/vscode-theme-rubyblue/master/images/preview.png)
