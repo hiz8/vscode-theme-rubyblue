@@ -26,10 +26,11 @@
   "keywords": [
     "theme",
     "color-theme",
-    "dark theme",
+    "dark",
+    "blue",
+    "navy",
     "high contrast",
-    "rubyblue",
-    "blue theme"
+    "readable"
   ],
   "contributes": {
     "themes": [
